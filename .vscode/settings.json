@@ -1,0 +1,7 @@
+{
+    "TARGET_IP":"192.168.1.1",
+    "DEBUG_PORT":"6666",
+    "BINARY":"hello-world.bin",
+
+    "SDK_DIR":"/opt/my_project/openwrt-sdk-19.07.1-ramips-mt76x8_gcc-7.5.0_musl.Linux-x86_64/staging_dir/toolchain-mipsel_24kc_gcc-7.5.0_musl/bin",
+}

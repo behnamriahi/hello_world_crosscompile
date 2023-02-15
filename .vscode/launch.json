@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "GDB-Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${config:BINARY}",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "MIMode": "gdb",
+            "targetArchitecture": "arm64",
+            "preLaunchTask": "deploy",
+            "setupCommands": [
+                {
+                    "description": "Pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb-multiarch",
+            "miDebuggerServerAddress": "${config:TARGET_IP}:${config:DEBUG_PORT}",
+        }
+    ]
+}
